@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from "react-scroll";
+import logo from "../../../../public/img/MS-logo-blanco.png"
 
 const NavBar = () => {
     const [nav, setNav] = useState(false)
@@ -30,7 +31,7 @@ const NavBar = () => {
     <div className='sticky top-0 flex justify-between items-center w-full h-24 px-4 text-white bg-black z-50'>
         <div>
             <Link to='home' className='cursor-pointer'>
-                <img src="../public/img/MS-logo-blanco.png" alt="logo" className='w-20 h-20' />
+                <img src={logo} alt="logo" className='w-20 h-20' />
             </Link>
         </div>
         <ul className="hidden md:flex">
