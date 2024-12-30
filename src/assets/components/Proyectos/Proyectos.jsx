@@ -1,6 +1,7 @@
 import React from 'react'
 import amapola from '../../../../public/img/amapola-project.png'
 import bondiobus from '../../../../public/img/bondiobus-project.png'
+import gestionDeTareas from '../../../../public/img/taskManager-project.png'
 
 
 const Proyectos = () => {
@@ -14,6 +15,11 @@ const Proyectos = () => {
           id: 2,
           src:bondiobus ,
           demo: "https://bondiobus.netlify.app/",
+        },
+        {
+          id: 3,
+          src:gestionDeTareas ,
+          demo: "https://taskmanager-frontend-schaller.vercel.app/",
         },
     ];
     
