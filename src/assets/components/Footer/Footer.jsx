@@ -34,8 +34,8 @@ const Footer = () => {
               <FaEnvelope size={25} />
             </a>
             <a
-            href="/CV-MartinaSchaller.pdf"
-            download="CV-MartinaSchaller.pdf"
+            href="/CV-MartinaSchaller-2025.pdf"
+            download="CV-MartinaSchaller-2025.pdf"
             className="bg-violet-500 text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-violet-600 transition duration-200"
           >
             <FaFileDownload />

@@ -1,11 +1,11 @@
 import React from 'react'
 import HeroImg from '../../../../public/img/heroImg.jpeg'
 import { TypeAnimation } from 'react-type-animation'
-import {MdOutlineKeyboardArrowRight } from 'react-icons/md'
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll'
 
 const Home = () => {
-  return (
+    return (
         <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-8'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
@@ -27,8 +27,12 @@ const Home = () => {
                         />
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
-                        Durante los últimos 2 años, he estado formándome y creando páginas web.
-                        Me apasiona el desarrollo frontend y, actualmente, estoy profundizando mis conocimientos en ReactJs.
+                        Desarrolladora web con especial interés en el desarrollo
+                        frontend. Tengo más de 2 años de experiencia trabajando con tecnologías como
+                        React, Tailwind CSS, JavaScript y herramientas modernas de
+                        diseño y consumo de APIs. Busco seguir creciendo profesionalmente
+                        en entornos colaborativos donde pueda aportar valor desde el
+                        diseño e implementación de interfaces intuitivas y eficientes.
                     </p>
                     <div>
                         <Link to='proyectos' smooth duration={500}>
@@ -51,7 +55,7 @@ const Home = () => {
 
             </div>
         </div>
-  )
+    )
 }
 
 export default Home

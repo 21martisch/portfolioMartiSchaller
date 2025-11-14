@@ -33,7 +33,7 @@ const Links = () => {
             child: (
                 <>CV<BsFillPersonLinesFill size={30}/></>
             ),
-            href: "/CV-MartinaSchaller.pdf",
+            href: "/CV-MartinaSchaller-2025.pdf",
             style: 'rounded-br-md',
             download: true,
         }
