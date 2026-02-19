@@ -34,13 +34,13 @@ const Footer = () => {
               <FaEnvelope size={25} />
             </a>
             <a
-            href="/CV-Schaller-2025.pdf"
-            download="CV-Schaller-2025.pdf"
-            className="bg-violet-500 text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-violet-600 transition duration-200"
-          >
-            <FaFileDownload />
-            <span>Descargar CV</span>
-          </a>
+              href="/CV-Schaller-2026.pdf"
+              download="CV-Schaller-2026.pdf"
+              className="bg-violet-500 text-white px-4 py-2 rounded-md flex items-center space-x-2 hover:bg-violet-600 transition duration-200"
+            >
+              <FaFileDownload />
+              <span>Descargar CV</span>
+            </a>
           </div>
         </div>
         <div className="mt-6 border-t border-gray-700 pt-4 text-center text-sm">

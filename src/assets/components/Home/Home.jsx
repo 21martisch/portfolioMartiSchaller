@@ -27,12 +27,7 @@ const Home = () => {
                         />
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
-                        Desarrolladora web con especial interés en el desarrollo
-                        frontend. Tengo más de 2 años de experiencia trabajando con tecnologías como
-                        React, Tailwind CSS, JavaScript y herramientas modernas de
-                        diseño y consumo de APIs. Busco seguir creciendo profesionalmente
-                        en entornos colaborativos donde pueda aportar valor desde el
-                        diseño e implementación de interfaces intuitivas y eficientes.
+                        Desarrolladora Full Stack con experiencia en React, TypeScript y NestJS, enfocada en la construcción de aplicaciones escalables y optimización de procesos. He trabajado en la integración de soluciones basadas en IA para automatizar la extracción y estructuración de datos en sistemas de facturación. Interesada en seguir desarrollándome en proyectos que combinen software e Inteligencia Artificial.
                     </p>
                     <div>
                         <Link to='proyectos' smooth duration={500}>
