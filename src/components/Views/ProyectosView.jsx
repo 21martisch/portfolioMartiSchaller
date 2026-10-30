@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import { FiExternalLink, FiGithub, FiLayers, FiMonitor, FiCheck } from 'react-icons/fi';
 import amapola from '/public/img/amapola-project.png';
 import gestionDeTareas from '/public/img/taskManager-project.png';
+import iglesia from '/public/img/iglesia-project.png';
 import { usePortfolio } from '../../context/PortfolioContext';
 
 const ProyectosView = ({ onBack }) => {
@@ -14,6 +15,43 @@ const ProyectosView = ({ onBack }) => {
   const setTab = (id, tab) => setActiveTab((prev) => ({ ...prev, [id]: tab }));
 
   const proyectos = [
+    {
+      id: 0,
+      titulo:
+        lang === 'es'
+          ? 'Iglesia Dios es Amor (IDEA) — Plataforma Web & Radio 24/7'
+          : 'Iglesia Dios es Amor (IDEA) — Web Platform & 24/7 Live Radio',
+      subtitulo:
+        lang === 'es'
+          ? 'Sitio institucional en producción con streaming de radio 24/7, feed de Instagram en vivo e integración con WhatsApp'
+          : 'Production web platform featuring 24/7 live radio streaming, automated Instagram feed & WhatsApp integration',
+      descripcion:
+        lang === 'es'
+          ? 'Plataforma web oficial desarrollada para la Iglesia Dios es Amor (IDEA) de San Nicolás de los Arroyos. Incluye reproductor de radio en línea 24/7 integrado en la navegación, sincronización automática con la cuenta oficial de Instagram para exhibir las últimas 6 publicaciones en tiempo real y canal directo de atención por WhatsApp.'
+          : 'Official web platform built for Iglesia Dios es Amor (IDEA) in San Nicolás de los Arroyos. Features a persistent 24/7 online radio player, automated synchronization with Instagram to display the latest 6 posts dynamically, and direct WhatsApp communication.',
+      imagen: iglesia,
+      url: 'iglesiadiosesamor.com.ar',
+      demo: 'https://iglesiadiosesamor.com.ar/',
+      tags: ['React', 'Radio Streaming 24/7', 'Instagram Feed API', 'WhatsApp API', 'Tailwind CSS'],
+      arquitectura:
+        lang === 'es'
+          ? {
+              frontend:
+                'Interfaz moderna y accesible con reproductor de audio persistente para la radio 24/7, carrusel interactivo de bienvenida y secciones informativas de reuniones, anexos y donaciones.',
+              backend:
+                'Conexión con el feed de Instagram para obtener y renderizar automáticamente las últimas 6 publicaciones sin intervención manual, más integración directa con WhatsApp.',
+              desafio:
+                'Garantizar que el streaming de la radio 24/7 funcione de forma fluida en navegadores móviles y de escritorio mientras se actualiza dinámicamente el contenido social de Instagram.',
+            }
+          : {
+              frontend:
+                'Modern, accessible interface featuring a persistent 24/7 audio stream player, interactive hero carousel, and clear navigation across schedules, branches, and donations.',
+              backend:
+                'Automated Instagram integration fetching and rendering the latest 6 posts dynamically without manual updates, alongside direct WhatsApp deep-linking.',
+              desafio:
+                'Ensuring uninterrupted 24/7 audio streaming across mobile and desktop browsers while dynamically loading social media content.',
+            },
+    },
     {
       id: 1,
       titulo:

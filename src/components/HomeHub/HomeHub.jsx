@@ -250,8 +250,8 @@ const HomeHub = ({ onNavigate, onOpenContact }) => {
                     </h3>
                     <p className="text-xs text-white/80 font-sans tracking-wide">
                       {lang === 'es'
-                        ? 'Amapola, TaskManager y arquitectura Full Stack'
-                        : 'Amapola, TaskManager & Full Stack architecture'}
+                        ? 'IDEA (Radio 24/7), Amapola y TaskManager'
+                        : 'IDEA (24/7 Radio), Amapola & TaskManager'}
                     </p>
                   </div>
                 </div>
