@@ -31,7 +31,7 @@ const ProyectosView = ({ onBack }) => {
           : 'Official web platform built for Iglesia Dios es Amor (IDEA) in San Nicolás de los Arroyos. Features a persistent 24/7 online radio player, automated synchronization with Instagram to display the latest 6 posts dynamically, and direct WhatsApp communication.',
       imagen: iglesia,
       url: 'iglesiadiosesamor.com.ar',
-      demo: 'https://iglesiadiosesamor.com.ar/',
+      demo: 'https://www.iglesiadiosesamor.com.ar/',
       tags: ['React', 'Radio Streaming 24/7', 'Instagram Feed API', 'WhatsApp API', 'Tailwind CSS'],
       arquitectura:
         lang === 'es'
