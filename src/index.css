@@ -1,3 +1,112 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-main: #F6F1EC;
+  --bg-card: #EDE5DC;
+  --bg-surface: #FAF7F2;
+  --bg-sand: #EAE2D7;
+  --text-main: #24211E;
+  --text-body: #3A3633;
+  --text-muted: #6A645F;
+  --border-main: #E3D8CC;
+  --accent-primary: #944627;
+  --accent-hover: #7E3B20;
+  --accent-secondary: #525A4D;
+  --accent-secondary-hover: #424A3D;
+}
+
+html.dark-theme {
+  --bg-main: #151413;
+  --bg-card: #1E1C1A;
+  --bg-surface: #252220;
+  --bg-sand: #2E2A27;
+  --text-main: #F4EFEA;
+  --text-body: #D5CCC2;
+  --text-muted: #9E948A;
+  --border-main: #35302C;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-main);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-main);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+  }
+}
+
+html.dark-theme .bg-\[\#F6F1EC\],
+html.dark-theme .bg-brand-bg { background-color: var(--bg-main) !important; }
+
+html.dark-theme .bg-\[\#EDE5DC\] { background-color: var(--bg-card) !important; }
+html.dark-theme .bg-\[\#FAF7F2\] { background-color: var(--bg-surface) !important; }
+html.dark-theme .bg-\[\#FAF7F2\]\/80 { background-color: rgba(37, 34, 32, 0.85) !important; }
+html.dark-theme .bg-\[\#EAE2D7\] { background-color: var(--bg-sand) !important; }
+html.dark-theme .bg-\[\#EFE8DF\] { background-color: #1B1917 !important; }
+html.dark-theme .hover\:bg-\[\#FAF7F2\]:hover { background-color: var(--bg-surface) !important; }
+html.dark-theme .hover\:bg-\[\#F2ECE3\]:hover { background-color: var(--bg-sand) !important; }
+
+html.dark-theme .text-\[\#24211E\],
+html.dark-theme .text-brand-dark { color: var(--text-main) !important; }
+html.dark-theme .text-\[\#3A3633\] { color: var(--text-body) !important; }
+html.dark-theme .text-\[\#6A645F\] { color: var(--text-muted) !important; }
+
+html.dark-theme .border-\[\#E3D8CC\],
+html.dark-theme .border-\[\#DDD3C5\],
+html.dark-theme .border-\[\#D8CCC0\],
+html.dark-theme .divide-\[\#E3D8CC\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--border-main) !important;
+}
+
+/* Subtle editorial paper grain */
+.editorial-grain {
+  background-image: radial-gradient(rgba(36, 33, 30, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+html.dark-theme .editorial-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes viewFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-view-in {
+  animation: viewFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}

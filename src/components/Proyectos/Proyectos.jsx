@@ -1,6 +1,6 @@
 import React from 'react'
-import amapola from '../../../../public/img/amapola-project.png'
-import gestionDeTareas from '../../../../public/img/taskManager-project.png'
+import amapola from '/public/img/amapola-project.png'
+import gestionDeTareas from '/public/img/taskManager-project.png'
 
 
 const Proyectos = () => {

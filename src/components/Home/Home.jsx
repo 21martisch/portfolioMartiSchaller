@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from '../../../../public/img/heroImg.jpeg'
+import HeroImg from '/public/img/heroImg.jpeg'
 import { TypeAnimation } from 'react-type-animation'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll'
